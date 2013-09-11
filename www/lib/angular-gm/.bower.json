@@ -1,0 +1,15 @@
+{
+  "name": "angular-gm",
+  "homepage": "https://github.com/dylanfprice/angular-gm",
+  "version": "0.2.0",
+  "_release": "0.2.0",
+  "_resolution": {
+    "type": "version",
+    "tag": "v0.2.0",
+    "commit": "505a6c777fff2199f53f0b2a4a6e4d15d2471cc7"
+  },
+  "_source": "git://github.com/dylanfprice/angular-gm.git",
+  "_target": "~0.2.0",
+  "_originalSource": "angular-gm",
+  "_direct": true
+}

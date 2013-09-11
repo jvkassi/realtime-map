@@ -1,0 +1,479 @@
+/* first my fonts ! */
+
+@font-face {
+    font-family: 'icomoon';
+    src:url('../fonts/icomoon.eot');
+    src:url('../fonts/icomoon.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/icomoon.woff') format('woff'),
+        url('../fonts/icomoon.ttf') format('truetype'),
+        url('../fonts/icomoon.svg#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* Use the following CSS code if you want to use data attributes for inserting your icons */
+[data-icon]:before {
+    font-family: 'icomoon' !important;
+    content: attr(data-icon);
+    speak: none;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    position: absolute;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    
+}
+.info-icon {
+    padding-left: 30px;
+}
+.info-icon:before {
+    left: 2px;  
+
+}
+.form-icon:before {
+    top: 13px;
+    left: 10px; 
+}
+.edit-icon:before {
+    top: 8px;
+    left: 2px;  
+}
+.search-icon:before {
+    top: 10px;
+    left: 10px;  
+}
+.nav-icon:before {
+    top: 8px;
+    left: 8px;
+}
+.form-icon, .edit-icon, .nav-icon, .search-icon, .info-icon, .icon {
+    position: relative;
+}
+/* TRANSITIONS */
+* {
+    font-family: Bitter;
+    -webkit-transition: all 0.2s ease-in-out;
+    -moz-transition:all 0.2s ease-in-out;
+    -o-transition:all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+}
+/* MY MAIN CSS */
+@media only screen and (max-width: 800px) {
+    .primary-nav a {
+        display: none !important;
+    }
+}
+.map {
+  height: 100%;
+}
+
+strong {
+    font-size: 18px;
+}
+html,body {
+    margin: 0;
+    padding: 0;
+    background: url('http://www.kisskissbankbank.com/assets/background-66346cb4105b8a7848413adf038f0d0c.png');
+    width: 100%;
+    height: 100%;
+}
+div {
+/*     width: 100%;
+    height: 100%;*/
+}
+.separator {
+    padding-bottom: 15px;
+    border-bottom: 1px solid #EEE;
+    margin-bottom: 15px;
+}
+.whiteBox {
+    background: white;
+
+}
+.backGreen {
+    background: #00D397;
+}
+.colorGreen {
+    color: #00D397;
+}
+.float-left {
+    float: left;
+}
+.float-right {
+    float: right
+}
+.hide {
+    display: none !important;
+}
+.error {
+    color: red;
+    font-family: Oswald !important;
+
+}
+.message {
+    position: relative;
+    text-align: center;
+    padding:8px;
+    cursor: pointer;
+   
+}
+.message span {
+    font-size: 20px;
+    font-family: Oswald;
+    color: white;
+}
+.message:before {
+    top: 12px;
+    right: 10px;
+}
+.info.message {
+    border: 3px solid  #00d397;
+    background: #00996D;
+}
+.alert.message {
+    border: 3px solid #BB0C14;
+    background: #EB0F19;
+}
+.big {
+    color: #00996D;
+}
+::-webkit-input-placeholder { font-size: 15px; color:#777; }
+::-moz-placeholder { font-size: 15px;color:#777; } /* firefox 19+ */
+:-ms-input-placeholder { font-size: 15px;color:#777; } /* ie */
+input:-moz-placeholder { font-size: 15px;color:#777; }
+
+/* SOME PURE HACKS */
+fieldset {
+    border: none !important;
+}
+
+input:focus {
+    border-color: #00d397 !important;
+}
+
+/* PRINCIPAL CLASSES */
+.wrapper {
+    max-width: 990px;
+    margin:0 auto;
+}
+.icon {
+    margin: 20px 0 !important; 
+}
+.processing, .processing input {
+    cursor: progress;
+}
+.text-center {
+    text-align:center;
+    font-style: italic;
+}
+h1.text-center {
+    font-size: 37px;
+}
+.big.text-center {
+    color: #00d397;
+    font-family: "Playfair Display" !important;   
+}
+#logout {
+    position: absolute;
+    right: 20%;
+    background: white;
+    top: 10px;
+    z-index: 20;
+}
+.bloc {
+    margin: 20px 0;
+}
+
+.clear {
+    clear: both;
+}
+.paperStyle {
+    background: white;
+    padding: 40px;
+    box-shadow: inset 0px 0px 15px -6px,#ebebeb 0 2px 0 -1px, #e1e1e1 0 4px 0 -2px, #fff 0 6px 0 -3px, #ebebeb 0 8px 
+    0 -4px, #e1e1e1 0 10px 0 -5px, #fff 0 12px 0 -6px, rgba(0,0,0,0.2) 0 14px 2px -7px;
+    -webkit-box-shadow: inset 0px 0px 15px -6px,#ebebeb 0 2px 0 -1px, #e1e1e1 0 4px 0 -2px,
+     #fff 0 6px 0 -3px, #ebebeb 0 8px 0 -4px, #e1e1e1 0 10px 0 -5px,
+     #fff 0 12px 0 -6px, rgba(0,0,0,0.2) 0 14px 2px -7px;
+    -moz-box-shadow: inset 0px 0px 15px -6px, #ebebeb 0 2px 0 -1px, #e1e1e1 0 4px 0 -2px, #fff 0 6px 0 -3px, 
+    #ebebeb 0 8px 0 -4px, #e1e1e1 0 10px 0 -5px, #fff 0 12px 0 -6px, rgba(0,0,0,0.2) 0 14px 2px -7px;
+}
+/*  HEADER NAV */
+.header {
+    position:fixed;
+    height: 55px;
+    width: 100%;
+    -webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+    -moz-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    /*height:62px;*/
+    background: white;
+    top: 0;
+    z-index: 30;
+}
+#logo {
+    float:left;
+    padding: 6px 0 !important;
+    /*margin: 2px 0;*/
+}
+
+.primary-nav form input {
+    width: 250px;
+}
+.navbar a{
+    font-family: Oswald !important; 
+}
+.primary-nav a { 
+    padding: 0 !important;
+    margin-left: 26px !important;   
+}
+.navbar a:hover, .navbar span:hover {
+    background: white !important;
+    color: #00d397;
+}
+.header a, .header span {
+    color: #777;
+    padding-top:4px !important;
+    line-height: 18px !important;
+}
+.header a small {
+    font-size: 15px;
+}
+.header li {
+    background: white !important;
+}
+.header .icon {
+    margin: 12px 0 !important;
+}
+#search {
+    padding-top: 6px;
+}
+#search input[type="text"] {
+    height: 36px;
+    padding-left: 30px;
+    font-family: Oswald;
+    padding-bottom: 10px;
+}
+.secondary-nav li {
+    display: block;
+    padding-top: 10px;   
+}
+
+.secondary-nav li a{
+    /*padding: 5px 9px !important;*/
+    /*margin-right: 10px !important;*/
+
+}
+#profile img {
+    vertical-align: middle;
+
+}
+#profile img:hover {
+     /*border: 1px solid #00d397;*/
+}
+#profile {
+    height: 100%;
+    background: #EEE;
+    -webkit-box-shadow: rgba(0, 0, 0, 0.2) 1px 0 0px,rgba(0, 0, 0, 0.2) -1px 0 0px;
+    -moz-box-shadow: rgba(0,0,0,0.2) 1px 0 0px,rgba(0,0,0,0.2) -1px 0 0px;
+    box-shadow: rgba(0, 0, 0, 0.2) 1px 0 0px,rgba(0, 0, 0, 0.2) -1px 0 0px;
+    /*height: 40px;*/
+    padding: 10px !important;
+    padding-bottom: 6px !important;
+
+    background: white;
+
+}
+
+#profile span {
+    padding: 5px;
+}
+
+#user-nav {
+    border: none !important;
+
+}
+#user-nav ul {
+    background: white;
+    position: absolute;
+    width: 150px;
+    left: -57px;
+    top: 54px;
+    -webkit-box-shadow: rgba(0, 0, 0, 0.2) 0 1px 1px,rgba(0, 0, 0, 0.2) -1px 0px 1px,rgba(0, 0, 0, 0.2) 1px 0px 1px;
+    -moz-box-shadow: rgba(0,0,0,0.2) 0 1px 1px,rgba(0,0,0,0.2) -1px 0px 1px,rgba(0,0,0,0.2) 1px 0px 1px;
+    box-shadow: rgba(0, 0, 0, 0.2) 0 1px 1px,rgba(0, 0, 0, 0.2) -1px 0px 1px,rgba(0, 0, 0, 0.2) 1px 0px 1px;
+}
+
+#user-nav li {
+    padding: 0 !important;
+    border-bottom: 1px #EEE solid;   
+    padding-left: 18px !important; 
+}
+
+
+/* MAIN CONTAINER */
+#main-container {
+    width: 100%;
+    height: 100%;
+}
+
+#main-container *{
+    font-family: Bitter;
+
+}
+
+.slider {
+    height: 300px;
+    border: 1px black solid;
+}
+
+#selector-project-container {
+    height:  300px;
+}
+
+#selector-project {
+    width: 200px !important;
+    height: 100%;
+}
+
+#selector-results {
+    height: 100.5%;
+    background: white;
+}
+
+.signs {
+    width: 460px;
+    margin: 10px 0;
+}
+.signs input[type="text"], .signs input[type="email"], .signs input[type="password"]{
+    width:100%;
+}
+.ng-pristine.ng-invalid input.ng-invalid {
+    border: none !important;
+}
+input {
+    background: url('../img/pattern.png') !important;
+    transition:none;
+}
+
+.current.ng-invalid input.ng-invalid{
+    border-color: red !important ;
+}
+.current div {
+    margin: 20px 0;
+}
+.current.ng-invalid input.ng-valid {
+    border-color: #00d397 !important ;
+}
+.signs input[type="text"], .signs input[type="email"], .signs input[type="password"]{
+    height: 45px !important;
+    padding-left: 30px !important; 
+    font-size: 16px !important;
+}
+.box {
+    background: #FAFAFA;
+    border: 3px solid white;
+    -webkit-box-shadow: 0 1px 1px 1px rgba(0, 0, 0, 0.15);
+    -moz-box-shadow: 0 1px 1px 1px rgba(0,0,0,0.15);
+    box-shadow: 0 1px 1px 1px rgba(0, 0, 0, 0.15);
+}
+.boxContainer {
+    margin: 10px;
+
+}
+#fb-login {
+    background-color:#3b5998;
+    
+    margin-top: 0px;
+}
+#fb-login img {
+    border-right: 1px solid white;
+    padding-top: -8px;
+    margin-right: 13px;
+    position: relative;
+    bottom: 2px;
+}
+#fb-login h2 {
+    color:white;
+    margin:12px;
+
+}
+
+#avatar .paperStyle {
+    padding: 10px !important;
+}
+#myProjects {
+    width: 764px;
+    height: 100%;
+    background: white;
+    float: left;
+}
+
+/* tabs */
+.tabs {
+    background: none !important;
+    width: 100%;
+}
+.tabs li {
+    display: inline !important;
+    float: left;
+}
+.tabs li.active a {
+   border-bottom: 1px solid white;
+border-left: 1px solid gainsboro;
+background: white;
+padding: 14px;
+height: 20px;
+margin-top: -6px;
+-webkit-box-shadow: rgba(0, 0, 0, 0.1) 1px -1px 1px;
+-moz-box-shadow: rgba(0,0,0,0.1) 1px -1px 1px;
+box-shadow: rgba(0, 0, 0, 0.1) 1px -1px 1px;
+}
+.tabs a {
+  padding: 11px 14px;
+    height: 30px;
+    background: whiteSmoke;
+    border: 1px solid gainsboro;
+    -webkit-box-shadow: #FDFDFD 1px 0 0 inset;
+    -moz-box-shadow: #fdfdfd 1px 0 0 inset;
+    box-shadow: #FDFDFD 1px 0 0 inset;
+    color: black;
+    position: relative;
+    top: -2px;
+}
+.edit-icon {
+    margin: 25px 0 !important;
+    padding-left:30px;
+}
+.whiteBox label {
+    font-size: 18px !important;
+    position: relative;
+    top: 8px;
+}
+.whiteBox input[type="text"], .whiteBox input[type="password"], .whiteBox input[type="date"]{
+    float: right !important;
+    width: 280px !important;
+    height: 35px;
+    font-size: 18px !important;
+    padding: 0 11px !important;
+}
+.whiteBox input[type="radio"] {
+    
+margin: 0 7px;
+position: relative;
+top: -2px;
+}
+.whiteBox textarea {
+    width: 100%;
+    overflow: hidden;
+    height: 80px;
+    resize: none;
+}
+/* footer */
+#footer {
+    margin-top: 20px;
+    background: white;
+    height: 300px;
+}
