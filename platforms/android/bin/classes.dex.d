@@ -1,4 +1,9 @@
 /opt/gits/phonegap/realtime-map/platforms/android/bin/classes.dex : \
+/opt/gits/phonegap/realtime-map/platforms/android/bin/classes/org/apache/cordova/geolocation/NetworkListener.class \
+/opt/gits/phonegap/realtime-map/platforms/android/bin/classes/org/apache/cordova/geolocation/GeoBroker.class \
+/opt/gits/phonegap/realtime-map/platforms/android/bin/classes/org/apache/cordova/geolocation/GPSListener.class \
+/opt/gits/phonegap/realtime-map/platforms/android/bin/classes/org/apache/cordova/geolocation/CordovaLocationListener.class \
+/opt/gits/phonegap/realtime-map/platforms/android/bin/classes/org/apache/cordova/geolocation/CordovaLocationListener$LocationTimeoutTask.class \
 /opt/gits/phonegap/realtime-map/platforms/android/bin/classes/com/phonegap/hello_world/BuildConfig.class \
 /opt/gits/phonegap/realtime-map/platforms/android/bin/classes/com/phonegap/hello_world/R.class \
 /opt/gits/phonegap/realtime-map/platforms/android/bin/classes/com/phonegap/hello_world/R$string.class \

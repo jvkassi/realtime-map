@@ -1,0 +1,10 @@
+	  <div style="position:absolute" id="logout" ng-click="logout()">
+	  	<a href><h3>Logout</h3></a>
+	  </div>
+      <gm-map gm-map-id="'dragMarkerMap'" gm-center="center" gm-zoom="zoom" gm-map-options="options.map" class="map" style="height:100%;width:100%">
+        <gm-markers gm-objects="address"
+                    gm-get-lat-lng="{ lat: object.lat, lng: object.lng}"
+                    gm-get-marker-options="options.marker"
+                    gm-on-dragend="getAddress(object, marker)"
+                    ></gm-markers>
+      </gm-map>

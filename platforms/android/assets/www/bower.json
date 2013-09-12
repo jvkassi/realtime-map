@@ -1,0 +1,20 @@
+{
+  "name": "realtime-map",
+  "version": "0.0.1",
+  "authors": [
+    "mib4fun <jeanvincent45@gmail.com>"
+  ],
+  "description": "realtime markers",
+  "main": "css/index.css",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "1.2"
+  }
+}

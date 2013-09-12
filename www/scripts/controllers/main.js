@@ -40,6 +40,7 @@ var SignsCtrl = DevpushApp_controllers.controller('SignsCtrl',  ['$scope', 'Auth
   $scope.$on('userCreated', function(event, currentUser) {
     // add new user
     $scope.profiles[currentUser.id] = $scope.user;
+    angular.extend( $scope.profiles[currentUser.id], currentUser);
     // login user
     $scope.login({
       uEmail: $scope.user.Email,
@@ -52,7 +53,6 @@ var SignsCtrl = DevpushApp_controllers.controller('SignsCtrl',  ['$scope', 'Auth
     console.log('connected')
       // confirm new user
       // console.log(currentUser)
-    $scope.profiles[currentUser.id] = currentUser;
     $scope.profiles[currentUser.id].connected = true;
     loc.path('/');
   })

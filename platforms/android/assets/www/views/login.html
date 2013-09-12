@@ -1,0 +1,75 @@
+
+<div class="wrapper pure-g-r" ng-init="current = null" ng-init="paperStyle = null">
+	<div class="float-left signs pure-u-1-2" id="sign_in">
+		<h1 class="big text-center">Connexion</h1>	
+		<div class="boxContainer" ng-class="{paperStyle : !paperStyle}" ng-click="paperStyle = false">
+			<form  ng-submit="login(user)" name="signinForm" class="pure-form pure-form-stacked" ng-class="{current: !current}" ng-click="current = false;; errorSignup = false" >
+			    <fieldset>
+			        <legend>Retrouvez vos projets</legend>
+			        <h3 class="error message" ng-show="errorLogin">{{error}}</h3>
+			        <div class="form-icon" aria-hidden="true" data-icon="&#xe001;">
+			        	<input ng-model="user.uEmail" name="email" id="email" type="email" placeholder="Email" required>
+			        </div>
+ 					<div class="form-icon" aria-hidden="true" data-icon="&#xe000;">
+			        	<input ng-model="user.uPass" name="pass" id="password" type="password" placeholder="Password" required>
+			        </div>
+			        <button type="submit" ng-disabled="signinForm.$invalid" class="pure-button pure-button-primary">Sign in</button>
+
+			    </fieldset>
+			</form>
+		</div>
+		<h2 class="text-center">Ou</h2>
+		<div>
+			<div class="boxContainer box" id="fb-login">
+
+				<h2 ng-click="fbLogin()">
+				<img class="float-left" src="http://png.findicons.com/files/icons/2636/pace_social_icons/32/facebook.png" />
+				Sign with Facebook </h2>
+			</div>
+		</div>
+	</div>
+ 
+	<div class="float-right signs pure-u-1-2"  id="sign_up">
+		<h1 class="big text-center">Inscription</h1>
+		<div class="boxContainer" ng-class="{paperStyle : paperStyle}" ng-click="paperStyle = true">
+			<form novalidate name="signupForm" class="pure-form pure-form-stacked" ng-class="{current : current}" ng-click="current = true; errorLogin = false;" ng-submit="addUser(user)" >
+			    <fieldset>
+			        <legend>Créer votre compte</legend>
+			        <h3 class="error message" ng-show="errorSignup">{{error}}</h3>
+			        <div class="form-icon" aria-hidden="true" data-icon="&#xe001;">
+			        	<input ng-model="user.first_name" name="firstname" id="firstname" type="text" placeholder="Firstname" required>
+			        </div>
+ 					<div class="form-icon" aria-hidden="true" data-icon="&#xe001;">
+ 						  <input ng-model="user.last_name" name="lastname" id="lastname" type="text" placeholder="Lastname" required >
+ 					</div>
+			        <div class="form-icon" aria-hidden="true" data-icon="&#xe002;">
+			        	<input ng-model="user.Email" name="email" id="email" type="email" placeholder="Email" required>
+			        	<span ng-show="signupForm.email.$error.email" class="error">
+			        		This is not a valid email
+			        	</span>	
+			        </div>
+			        <div class="form-icon" aria-hidden="true" data-icon="&#xe000;">
+			        	<input ng-model="user.Pass" name="password" id="password" type="password" placeholder="Password"  >
+			        	 <span ng-show="signupForm.password.$error.length" class="error">
+			        		Min length 5
+			        	</span>	
+			        </div>
+			        <div class="form-icon" aria-hidden="true" data-icon="&#xe000;">
+			        	<input ng-model="repass" name="repassword"  id="repassword" type="password" placeholder="Confirm password"  repeatpassword="password" required>
+			        	<span ng-show="signupForm.repassword.$error.repeat" class="error">
+			        		Password don't match
+			        	</span>	
+			        	
+			        </div>
+			        <label for="remember" class="pure-checkbox">
+			        	<input id="remember" type="checkbox" ng-model="check" required> 
+			        	Rules !
+			        </label>
+			        <!-- {{user}} -->
+ 					<button type="submit" ng-disabled="signupForm.$invalid" class="pure-button pure-button-primary" >Sign in</button>
+			    </fieldset>
+			</form>
+		</div>
+	</div>	
+	<div class="clear"></div>
+</div>

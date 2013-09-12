@@ -1,0 +1,10 @@
+      <div gm-info-window="infoWindow">
+        <h4 style="margin:0">{{person.first_name}}</h4>
+      </div>
+      <gm-map gm-map-id="'dragMarkerMap'" gm-center="center" gm-zoom="zoom" gm-map-options="options.map" class="map" style="height:100%;width:100%">
+        <gm-markers gm-objects="markers"
+                    gm-get-lat-lng="{ lat: object.location.lat, lng: object.location.lng}"
+                    gm-get-marker-options="getMarkerOptions(object)"
+                    gm-on-click="person = object; infoWindow.open(marker.getMap(), marker);">
+                    ></gm-markers>
+      </gm-map>
